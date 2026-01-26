@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
-// Copyright 2025 rtldg <rtldg@protonmail.com>
+// Copyright 2025-2026 rtldg <rtldg@protonmail.com>
 
 // Going to be using a simple synchronous threaded approach for this...
 //   new connection -> spawn thread...
@@ -58,7 +58,7 @@ fn process_join(server_challenge: i32, msg: &[u8], peer_addr: SocketAddrV4, pool
 	let mut version = String::new();
 	//let mut product = "";
 	// custom...
-	let mut appid = 0u64;
+	let mut appid = 0i64;
 	let mut gametype = String::new();
 	let mut gamedata = String::new();
 	let mut hostname = "";
